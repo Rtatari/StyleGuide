@@ -1,0 +1,52 @@
+*, *::after, *::before { /* *= everything selector, all after psudo elements and all before psuedo elements*/
+  box-sizing: border-box; /*default for everything*/
+}
+
+.box {
+  display: -ms-flex;
+  display: flex;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.navBarItem{
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  padding: 1em 0;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.grid_page{
+  display: -ms-flex;
+  display: flex;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  border: red 1px solid;
+  padding: 2em;
+}
+
+.grid_column{
+  padding: 1em;
+  border: blue 1px solid;
+  width:50%;
+  height: 30em;
+  margin: 1em 0;
+}
+
+.grid_nav{
+  padding: 2em;
+  border: green 1px solid;
+  width:25%;
+  margin: 1em 0;
+}
+
+@media (max-width: 54.125em) {
+  .grid_column{
+    width: 100%;
+    /*display: block;*/
+  }
+}
