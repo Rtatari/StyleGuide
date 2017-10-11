@@ -5,6 +5,7 @@
 body {
   font-family: sans-serif;
   padding: 1rem 2rem;
+  /*background-color: rgb(44, 62, 80);*/
 }
 
 section:not([id]) {
@@ -244,4 +245,40 @@ ul, ol{
   font-family: "title", Verdana, sans-serif;
   border: orange 1px solid;
   padding: 0.2em;
+}
+
+
+.container_body{
+  border: red 1px solid;
+}
+
+.container_main{
+  border: blue 1px solid;
+  margin: 1em;
+  /*background-color: #fff;*/
+}
+
+.top_banner{
+  border: green 1px solid;
+  padding: 1em;
+  /*background-color: #fff;*/
+}
+
+.logo_icon{
+  display: inline-block;
+  border: black 1px solid;
+  height: 8em;
+}
+
+.logo_text{
+  display: inline-block;
+  border: yellow 1px solid;
+  height: 8em;
+  margin: 0 2em;
+  /*position: absolute;*/
+}
+
+.bottom_banner{
+  border: purple 1px solid;
+  margin: 1em;
 }
