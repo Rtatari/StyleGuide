@@ -48,9 +48,9 @@ p, a{
   font-family: "body_text", Verdana, sans-serif;
 }
 
-p.rendered{
+/*p.rendered{
   max-width: 10em;
-}
+}*/
 
 
 /*
@@ -273,8 +273,32 @@ ul, ol{
 .container_main{
   border: blue 1px solid;
   margin: 1em;
+  padding: 1em;
   /*background-color: #fff;*/
 }
+
+.home_imgs{
+  display: inline-block;
+  width: 50%;
+  border: red 1px dotted;
+  height: 30em;
+
+}
+
+.home_content{
+  display: inline-block;
+  width: 49%;
+  border: green 1px dotted;
+  height: 30em;
+  margin-top: 0;
+
+}
+
+.home_content_heading{
+  border: 1px red dashed;
+  padding-left: 2em;
+}
+
 
 .top_banner{
   border: green 1px solid;
@@ -299,8 +323,18 @@ ul, ol{
 .bottom_banner{
   border: purple 1px solid;
   margin: 1em;
+  overflow: auto;
 }
 
+.social_media_icon{
+  display: inline-block;
+  position: relative;
+  float: right;
+
+  width: 5em;
+  height: 5em;
+  border: orange 1px solid;
+}
 
 /* Style the tab */
 div.tab {
@@ -327,6 +361,8 @@ div.tab button {
     transition: 0.3s;
 }
 
+
+
 /* Change background color of buttons on hover */
 div.tab button:hover {
     background-color: #ddd;
@@ -345,4 +381,20 @@ div.tab button.active {
     width: 70%;
     border-left: none;
     height: 300px;
+}
+
+
+@media (max-width: 73.44em) { /*768px, 1175*/
+    .home_imgs{
+      width: 100%;
+      display: block;
+    }
+
+    .home_content{
+      width: 100%;
+      display: block;
+    }
+
+
+
 }
