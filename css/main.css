@@ -390,12 +390,14 @@ div.tab button.active {
 
 /* Style the tab content */
 .tabcontent {
-    float: left;
-    padding: 0px 12px;
+  display: block;
+    /*float: left;*/
+    /*padding: 0px 12px;*/
     /*border: 1px solid #ccc;*/
-    width: 70%;
-    border-left: none;
+    /*width: 70%;*/
+    /*border-left: none;*/
     height: 300px;
+    border: green 1px solid;
 }
 
 
@@ -428,7 +430,7 @@ div.tab button.active {
     border: red 1px solid;
     display: inline-block;
     margin-left: 15em;
-    
+
     /*margin-top: 15%;*/
     /*margin-right: auto;*/
     /*padding-bottom: 10em;*/
