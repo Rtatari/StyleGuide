@@ -196,10 +196,15 @@ ul, ol{
 
 /* paragraph section */
 .paragraph-section{
-  position: absolute;
-  padding-left: 20%;
-  padding-right: 40%;
+  border: red 1px solid;
+  /*position: absolute;*/
+  display: inline-block;
+  /*padding-left: 20%;*/
+  /*padding-right: 40%;*/
+  width: 50%;
+  margin-left: 6em;
 }
+
 
 
 /*
@@ -242,9 +247,12 @@ ul, ol{
 
 
 .side-image{
-  margin-top: 15%;
-  margin-right: auto;
-  padding-left: 70%;
+  border: red 1px solid;
+  display: inline-block;
+  /*margin-top: 15%;*/
+  /*margin-right: auto;*/
+  /*padding-bottom: 10em;*/
+  /*padding-left: 70%;*/
 }
 
 .grid_content_heading{
@@ -401,7 +409,30 @@ div.tab button.active {
       width: 100%;
       display: block;
     }
+}
 
+@media (max-width: 71.75em) {
 
+  .paragraph-section{
+    border: red 1px solid;
+    /*position: absolute;*/
+    /*display: inline-block;*/
+    /*padding-left: 20%;*/
+    /*padding-right: 40%;*/
+    width: 100%;
+    margin-left: 0;
+    padding: 2em;
+  }
+
+  .side-image{
+    border: red 1px solid;
+    display: inline-block;
+    margin-left: 15em;
+    
+    /*margin-top: 15%;*/
+    /*margin-right: auto;*/
+    /*padding-bottom: 10em;*/
+    /*padding-left: 70%;*/
+  }
 
 }
