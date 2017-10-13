@@ -5,7 +5,7 @@
 body {
   font-family: sans-serif;
   padding: 1rem 2rem;
-  /*background-color: rgb(44, 62, 80);*/
+  background-color: rgb(44, 62, 80);
 }
 
 section:not([id]) {
@@ -53,9 +53,14 @@ p, a {
   text-align: center;
 }
 
-p.rendered{
-  max-width: 10em;
+a{
+  text-decoration: none;
+  color: red;
 }
+
+/*p.rendered{
+  max-width: 10em;
+}*/
 
 
 /*
@@ -202,10 +207,15 @@ ul, ol{
 
 /* paragraph section */
 .paragraph-section{
-  position: absolute;
-  padding-left: 20%;
-  padding-right: 40%;
+  border: red 1px solid;
+  /*position: absolute;*/
+  display: inline-block;
+  /*padding-left: 20%;*/
+  /*padding-right: 40%;*/
+  width: 50%;
+  margin-left: 6em;
 }
+
 
 
 /*
@@ -248,9 +258,12 @@ ul, ol{
 
 
 .side-image{
-  margin-top: 15%;
-  margin-right: auto;
-  padding-left: 70%;
+  border: red 1px solid;
+  display: inline-block;
+  /*margin-top: 15%;*/
+  /*margin-right: auto;*/
+  /*padding-bottom: 10em;*/
+  /*padding-left: 70%;*/
 }
 
 .grid_content_heading{
@@ -289,14 +302,39 @@ ul, ol{
 
 .container_main{
   border: blue 1px solid;
-  margin: 1em;
-  /*background-color: #fff;*/
+  /*margin: 1em;*/
+  padding: 2em;
+  background-color: #fff;
 }
+
+.home_imgs{
+  display: inline-block;
+  width: 50%;
+  border: red 1px dotted;
+  height: 30em;
+
+}
+
+.home_content{
+  display: inline-block;
+  width: 49%;
+  border: green 1px dotted;
+  height: 30em;
+  margin-top: 0;
+  background-color: #fff;
+
+}
+
+.home_content_heading{
+  border: 1px red dashed;
+  padding-left: 2em;
+}
+
 
 .top_banner{
   border: green 1px solid;
   padding: 1em;
-  /*background-color: #fff;*/
+  background-color: #fff;
 }
 
 .logo_icon{
@@ -316,8 +354,26 @@ ul, ol{
 .bottom_banner{
   border: purple 1px solid;
   margin: 1em;
+  overflow: auto;
+  background-color: #fff;
 }
 
+.social_media_icon{
+  display: inline-block;
+  position: relative;
+  float: right;
+
+  width: 5em;
+  height: 5em;
+  border: orange 1px solid;
+}
+
+.row{
+  display: inline-block;
+  border: red 1px solid;
+  margin-left: 6em;
+  margin-bottom: 2em;
+}
 
 /* Style the tab */
 div.tab {
@@ -344,6 +400,8 @@ div.tab button {
     transition: 0.3s;
 }
 
+
+
 /* Change background color of buttons on hover */
 div.tab button:hover {
     background-color: #ddd;
@@ -362,12 +420,53 @@ div img {
 
 /* Style the tab content */
 .tabcontent {
-    float: left;
-    padding: 0px 12px;
+  display: block;
+    /*float: left;*/
+    /*padding: 0px 12px;*/
     /*border: 1px solid #ccc;*/
-    width: 70%;
-    border-left: none;
+    /*width: 70%;*/
+    /*border-left: none;*/
     height: 300px;
+    border: green 1px solid;
+}
+
+
+@media (max-width: 73.44em) { /*768px, 1175*/
+    .home_imgs{
+      width: 100%;
+      display: block;
+    }
+
+    .home_content{
+      width: 100%;
+      display: block;
+    }
+}
+
+@media (max-width: 71.75em) {
+
+  .paragraph-section{
+    border: red 1px solid;
+    /*position: absolute;*/
+    /*display: inline-block;*/
+    /*padding-left: 20%;*/
+    /*padding-right: 40%;*/
+    width: 100%;
+    margin-left: 0;
+    padding: 2em;
+  }
+
+  .side-image{
+    border: red 1px solid;
+    display: inline-block;
+    margin-left: 15em;
+
+    /*margin-top: 15%;*/
+    /*margin-right: auto;*/
+    /*padding-bottom: 10em;*/
+    /*padding-left: 70%;*/
+  }
+
 }
 .optioncontent {
     float: left;
