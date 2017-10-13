@@ -214,6 +214,7 @@ ul, ol{
   /*padding-right: 40%;*/
   width: 50%;
   margin-left: 6em;
+  background: #fff;
 }
 
 
@@ -298,6 +299,7 @@ ul, ol{
 
 .container_body{
   border: red 1px solid;
+  background-color: #fff;
 }
 
 .container_main{
@@ -454,6 +456,7 @@ div img {
     width: 100%;
     margin-left: 0;
     padding: 2em;
+
   }
 
   .side-image{
