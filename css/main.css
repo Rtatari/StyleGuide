@@ -5,7 +5,7 @@
 body {
   font-family: sans-serif;
   padding: 1rem 2rem;
-  /*background-color: rgb(44, 62, 80);*/
+  background-color: rgb(44, 62, 80);
 }
 
 section:not([id]) {
@@ -46,6 +46,11 @@ h3{
 
 p, a{
   font-family: "body_text", Verdana, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: red;
 }
 
 /*p.rendered{
@@ -280,9 +285,9 @@ ul, ol{
 
 .container_main{
   border: blue 1px solid;
-  margin: 1em;
-  padding: 1em;
-  /*background-color: #fff;*/
+  /*margin: 1em;*/
+  padding: 2em;
+  background-color: #fff;
 }
 
 .home_imgs{
@@ -299,6 +304,7 @@ ul, ol{
   border: green 1px dotted;
   height: 30em;
   margin-top: 0;
+  background-color: #fff;
 
 }
 
@@ -311,7 +317,7 @@ ul, ol{
 .top_banner{
   border: green 1px solid;
   padding: 1em;
-  /*background-color: #fff;*/
+  background-color: #fff;
 }
 
 .logo_icon{
@@ -332,6 +338,7 @@ ul, ol{
   border: purple 1px solid;
   margin: 1em;
   overflow: auto;
+  background-color: #fff;
 }
 
 .social_media_icon{
