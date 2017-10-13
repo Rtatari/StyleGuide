@@ -336,6 +336,13 @@ ul, ol{
   border: orange 1px solid;
 }
 
+.row{
+  display: inline-block;
+  border: red 1px solid;
+  margin-left: 6em;
+  margin-bottom: 2em;
+}
+
 /* Style the tab */
 div.tab {
     float: left;
