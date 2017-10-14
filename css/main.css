@@ -303,6 +303,8 @@ ul, ol{
 }
 
 .container_main{
+  display: flex;
+  flex-wrap: wrap;
   border: blue 1px solid;
   /*margin: 1em;*/
   padding: 2em;
@@ -310,7 +312,8 @@ ul, ol{
 }
 
 .home_imgs{
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   width: 50%;
   border: red 1px dotted;
   height: 30em;
@@ -318,8 +321,9 @@ ul, ol{
 }
 
 .home_content{
-  display: inline-block;
-  width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
   border: green 1px dotted;
   height: 30em;
   margin-top: 0;
@@ -328,8 +332,14 @@ ul, ol{
 }
 
 .home_content_heading{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px red dashed;
-  padding-left: 2em;
+  /*padding-left: 2em;*/
 }
 
 
