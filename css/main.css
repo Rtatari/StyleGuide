@@ -321,8 +321,8 @@ ul, ol{
 }
 
 .home_content{
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
   width: 50%;
   border: green 1px dotted;
   height: 30em;
@@ -336,10 +336,25 @@ ul, ol{
   flex-wrap: wrap;
   flex-grow: 0;
   flex-shrink: 0;
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin: 0 2em;
   border: 1px red dashed;
+  /*padding: 0;*/
   /*padding-left: 2em;*/
+}
+
+.home_content_subheading{
+  display: flex;
+  flex-wrap:wrap-reverse;
+  border: green 1px solid;
+}
+
+
+.home_content_text{
+  display: flex;
+  /*flex-wrap: nowrap;*/
+  border: blue 1px solid;
 }
 
 
