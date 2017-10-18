@@ -32,6 +32,7 @@ section code {
 h1{
   font-size: 4em;
   font-family: "title", Verdana, sans-serif;
+  /*text-decoration: underline;*/
 }
 
 h2{
@@ -309,6 +310,7 @@ ul, ol{
   /*margin: 1em;*/
   padding: 2em;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .home_imgs{
@@ -316,7 +318,7 @@ ul, ol{
   flex-wrap: wrap;
   width: 50%;
   border: red 1px dotted;
-  height: 30em;
+  height: auto;
 
 }
 
@@ -325,7 +327,7 @@ ul, ol{
   /*flex-wrap: wrap;*/
   width: 50%;
   border: green 1px dotted;
-  height: 30em;
+  /*height: 30em;*/
   margin-top: 0;
   background-color: #fff;
 
@@ -346,15 +348,17 @@ ul, ol{
 
 .home_content_subheading{
   display: flex;
-  flex-wrap:wrap-reverse;
+  /*flex-wrap:wrap-reverse;*/
+  flex: auto;
   border: green 1px solid;
 }
 
 
 .home_content_text{
   display: flex;
-  /*flex-wrap: nowrap;*/
+  flex:auto;
   border: blue 1px solid;
+
 }
 
 
@@ -362,20 +366,43 @@ ul, ol{
   border: green 1px solid;
   padding: 1em;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .logo_icon{
   display: inline-block;
+  /*display: flex;*/
+  flex-wrap: wrap;
   border: black 1px solid;
   height: 8em;
 }
 
 .logo_text{
   display: inline-block;
+  flex-wrap: wrap;
   border: yellow 1px solid;
   height: 8em;
-  margin: 0 2em;
+  /*margin: 0 2em;*/
   /*position: absolute;*/
+}
+
+.log_in{
+  float: right;
+  display: flex;
+  position: relative;
+  height: 8em;
+  width: 6em;
+  border: green 1px solid;
+
+
+}
+
+.shopping_cart{
+  display: flex;
+  border: black 1px solid;
+  height: 8em;
+  width: 6em;
+  float: right;
 }
 
 .bottom_banner{
@@ -395,11 +422,30 @@ ul, ol{
   border: orange 1px solid;
 }
 
-.row{
-  display: inline-block;
+.product_grid{
+  margin-top: 5em;
+}
+
+.product_img{
+  display: flex;
+  /*flex-wrap: wrap;*/
   border: red 1px solid;
-  margin-left: 6em;
-  margin-bottom: 2em;
+  /*margin-left: 6em;*/
+  /*margin-bottom: 2em;*/
+}
+
+.product_text{
+  display: block;
+  /*position: relative;*/
+  /*flex-wrap: wrap;*/
+  border: green 1px solid;
+  padding: 0;
+}
+
+.column_1, .column_2{
+  display: flex;
+  /*flex-wrap: wrap;*/
+  border: red 1px solid;
 }
 
 /* Style the tab */
