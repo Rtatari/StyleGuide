@@ -330,7 +330,9 @@ ul, ol{
 
 .home_content_heading{
   border: 1px red dashed;
-  padding-left: 2em;
+<<<<<<< Updated upstream
+  /*padding: 0;*/
+  /*padding-left: 2em;*/
 }
 
 .home_content_subheading{
@@ -346,6 +348,9 @@ ul, ol{
   flex:auto;
   border: blue 1px solid;
 
+=======
+  padding-left: 2em;
+>>>>>>> Stashed changes
 }
 
 
