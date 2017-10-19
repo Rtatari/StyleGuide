@@ -44,7 +44,7 @@
   margin: 1em 0;
 }
 
-@media (max-width: 54.125em) {
+@media (min-width: 54.125em) {
   .grid_column{
     width: 100%;
     /*display: block;*/
