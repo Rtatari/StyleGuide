@@ -112,7 +112,7 @@ a{
 }
 
 .button:hover, .button:focus, .button:active {
-    background-color: rgb(44, 62, 80);
+    background-color: rgb(125,35,20);
 }
 
 .button_order{
@@ -309,7 +309,7 @@ ul, ol{
 }
 
 .navBarItem:hover, .navBarItem:focus, .navBarItem:active{
-  background-color: rgb(44, 62, 80);
+  background-color: rgb(125,35,20);
   /*border: 2px grey solid;*/
 }
 
