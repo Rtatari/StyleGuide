@@ -372,6 +372,7 @@ ul, ol{
 
 
 .top_banner{
+  display: flex;
   border: green 1px solid;
   padding: 1em;
   background-color: #fff;
@@ -497,6 +498,7 @@ ul, ol{
 }
 
 .product_page_info{
+  border: red 1px dotted;
   /*background-color: #fff;
   flex-grow: 1;*/
   max-width: 50em;
@@ -655,17 +657,19 @@ div img {
 }
 
 
-.optioncontent {
+/*.optioncontent {
     float: left;
     padding: 0px 12px;
-    /*border: 1px solid #ccc;*/
+    border: 1px solid #ccc;
     width: 70%;
     border-left: none;
     height: 300px;
-}
+}*/
+
 /* Style the size option list */
-div.option {
-    float: left;
+div.size_option {
+  /*display: block;*/
+    /*float: left;*/
     /*border: 1px solid #ccc;*/
     background-color: white;
     width: 30%;
@@ -673,7 +677,7 @@ div.option {
 }
 
 /* Style the buttons inside the size option */
-div.option button {
+div.size_option button {
     font-family: "title", Verdana, sans-serif;
     font-size: 1em;
     display: block;
@@ -681,7 +685,7 @@ div.option button {
     color: black;
     padding: 8px 4px;
     width: 100%;
-    border: none;
+    border: blue 1px solid;
     outline: none;
     text-align: left;
     cursor: pointer;
@@ -689,11 +693,16 @@ div.option button {
 }
 
 /* Change background color of buttons on hover */
-div.option button:hover {
+div.size_option button:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current "tab button" class */
-div.option button.active {
+div.size_option button.active {
     background-color: #ccc;
+}
+
+.add2Cart_Button{
+  justify-content: flex-end;
+  border: green 1px solid;
 }
