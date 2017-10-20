@@ -36,6 +36,7 @@ section code {
 h1{
   font-size: 4em;
   font-family: "title", Verdana, sans-serif;
+  color: rgb(44, 62, 80);
   /*text-decoration: underline;*/
 }
 
@@ -765,4 +766,9 @@ div.size_option button.active {
 .cartItem_Border{
   /*border: black 1px solid;
   padding: 1em;*/
+}
+
+.signIn-Button{
+  justify-content: flex-end;
+  border: green 1px solid;
 }
