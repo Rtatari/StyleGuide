@@ -48,6 +48,13 @@ h3{
   font-family: "section2", Verdana, sans-serif;
   font-size: 2em;
 }
+
+h3.product_title{
+  font-family: "section2", Verdana, sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
 h4{
   font-family: "section2", Verdana, sans-serif;
   font-size: 2em;
@@ -290,7 +297,7 @@ ul, ol{
   padding: 0.2em;
 }
 
-/*.container{
+.container{
   display: flex;
 }
 
@@ -303,35 +310,43 @@ ul, ol{
 }
 
 .container_main{
-  border: blue 1px solid;
-  margin: 1em;
+  /*border: blue 1px solid;*/
+  margin-top: 1em;
   padding: 2em;
   background-color: #fff;
   overflow: hidden;
-}*/
+}
+
+.container_main_home{
+  /*border: blue 1px solid;*/
+
+  margin-top: 1em;
+  padding: 2em;
+  background-color: #fff;
+  /*overflow: hidden;*/
+}
 
 
 
 .home_imgs{
-  display: inline-block;
-  width: 50%;
-  border: red 1px dotted;
-  height: auto;
+  flex-direction: column;
+  width: 100%;
+  display: block;
+
 
 }
 
 .home_content{
-  display: inline-block;
-  width: 49%;
-  border: green 1px dotted;
-  /*height: 30em;*/
-  margin-top: 0;
-  background-color: #fff;
+  flex-direction: column;
+  width: 100%;
+  display: block;
+
+
 
 }
 
 .home_content_heading{
-  border: 1px red dashed;
+  /*border: 1px red dashed;*/
 <<<<<<< Updated upstream
   /*padding: 0;*/
   /*padding-left: 2em;*/
@@ -341,14 +356,14 @@ ul, ol{
   display: flex;
   /*flex-wrap:wrap-reverse;*/
   flex: auto;
-  border: green 1px solid;
+  /*border: green 1px solid;*/
 }
 
 
 .home_content_text{
   display: flex;
   flex:auto;
-  border: blue 1px solid;
+  /*border: blue 1px solid;*/
 
 =======
   padding-left: 2em;
@@ -553,13 +568,24 @@ div img {
 
 @media (min-width: 73.44em) { /*768px, 1175*/
     .home_imgs{
-      width: 100%;
-      display: block;
+      display: inline-block;
+      width: 50%;
+      /*border: red 1px dotted;*/
+      height: auto;
     }
 
     .home_content{
-      width: 100%;
-      display: block;
+      display: inline-block;
+      width: 49%;
+      /*border: green 1px dotted;*/
+      /*height: 30em;*/
+      margin-top: 0;
+      background-color: #fff;
+    }
+
+    .container_main_home{
+      display: flex;
+      flex-wrap: wrap;
     }
 }
 
