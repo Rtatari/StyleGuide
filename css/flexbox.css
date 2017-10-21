@@ -13,7 +13,8 @@
 .navBarItem{
   -ms-flex-grow: 1;
   flex-grow: 1;
-  padding: 1em 0;
+  padding: 0.5em 0;
+  margin-left: 0;
   font-size: 1.4em;
   text-align: center;
 }

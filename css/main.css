@@ -3,7 +3,7 @@
   Default styling for the style guide
 */
 body {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   padding: 1rem 2rem;
   background-color: rgb(44, 62, 80);
 }
@@ -45,8 +45,10 @@ h1.h1_center{
 }
 
 h2{
-  font-family: "section", Verdana, sans-serif;
+  font-family: "section", Verdana;
   font-size: 2em;
+  color: white;
+  padding-left: 4.5em;
 }
 
 h2.h2_center{
@@ -61,31 +63,34 @@ h2.cart_title{
 }
 
 h3{
-  font-family: "section2", Verdana, sans-serif;
+  font-family: "section2", Verdana;
   font-size: 2em;
 }
 
 h3.product_title{
-  font-family: "section2", Verdana, sans-serif;
+  font-family: "section2", Verdana;
   font-size: 2em;
   text-align: center;
 }
 
 h4{
-  font-family: "section2", Verdana, sans-serif;
+  font-family: "section2", Verdana;
   font-size: 2em;
   text-align: center;
 }
+h5{
+
+}
 
 p, a {
-  font-family: "body_text", Verdana, sans-serif;
+  font-family: "body_text", Verdana;
   /*text-align: center;*/
   padding: 0 2em;
 }
 
 a{
   text-decoration: none;
-  color: red;
+  color: white;
 }
 
 /*p.rendered{
@@ -108,7 +113,7 @@ a{
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.2s ease-out;
-  font-family: "section_special", Verdana, sans-serif;
+  font-family: "section_special", Verdana;
 }
 
 .button:hover, .button:focus, .button:active {
@@ -125,7 +130,7 @@ a{
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.2s ease-out;
-  font-family: "section_special", Verdana, sans-serif;
+  font-family: "section_special", Verdana;
 }
 
 .button_order:hover, .button_order:focus, .button_order:active {
@@ -143,7 +148,7 @@ a{
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.2s ease-out;
-  font-family: "section_special", Verdana, sans-serif;
+  font-family: "section_special", Verdana;
 }
 
 .button_remove:hover, .button_remove:focus, .button_remove:active {
@@ -196,7 +201,7 @@ a{
 
 .in-text{
   text-decoration: none;
-  font-family: "body_text_link", Verdana, sans-serif;
+  font-family: "body_text_link", Verdana;
   color: #999;
 }
 
@@ -230,7 +235,7 @@ a{
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.2s ease-out;
-  font-family: "section_special", Verdana, sans-serif;
+  font-family: "section_special", Verdana;
   border: grey 2px solid;
 }
 
@@ -268,7 +273,7 @@ a{
 
 ul, ol{
   font-size: 1.2em;
-  font-family: "body_text", Verdana, sans-serif;
+  font-family: "body_text", Verdana;
 }
 
 /* paragraph section */
@@ -289,7 +294,7 @@ ul, ol{
 */
 
 .navBarItem{
-  font-family: "title", Verdana, sans-serif;
+  font-family: "title", Verdana;
   background-color: rgb(192,57,43);
   padding: 1em;
   display: inline-block;
@@ -297,7 +302,7 @@ ul, ol{
   font-size: 1em;
   text-decoration: none;
   color: white;
-  border: 2px rgb(44, 62, 80) solid;
+  border: 1px rgb(44, 62, 80) solid;
 
   /*display: inline-block;
 	color: white;
@@ -333,19 +338,19 @@ ul, ol{
 }
 
 .grid_content_heading{
-  font-family: "title", Verdana, sans-serif;
+  font-family: "title", Verdana;
   border: orange 1px solid;
   padding: 1em;
 }
 
 .grid_content_subheading{
-  font-family: "title", Verdana, sans-serif;
+  font-family: "title", Verdana;
   border: orange 1px solid;
   padding: 1em;
 }
 
 .grid_content_body{
-  font-family: "title", Verdana, sans-serif;
+  font-family: "title", Verdana;
   border: orange 1px solid;
   padding: 0.2em;
 }
@@ -423,32 +428,6 @@ ul, ol{
 >>>>>>> Stashed changes
 }
 
-
-.top_banner{
-  display: flex;
-  border: green 1px solid;
-  padding: 1em;
-  background-color: #fff;
-  overflow: hidden;
-}
-
-.logo_icon{
-  /*display: inline-block;*/
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-  border: black 1px solid;
-  height: 8em;
-}
-
-.logo_text{
-  /*display: inline-block;*/
-  /*flex-wrap: wrap;*/
-  /*border: yellow 1px solid;*/
-  height: 8em;
-  /*margin: 0 2em;*/
-  /*position: absolute;*/
-}
-
 .log_in{
   float: right;
   display: flex;
@@ -461,11 +440,20 @@ ul, ol{
 }
 
 .shopping_cart{
+  font-family: "title", Verdana;
+  margin-top: 1em;
   display: flex;
-  border: black 1px solid;
-  height: 8em;
-  width: 6em;
+  /*border: black 1px solid;*/
+  /*height: 8em;
+  width: 6em;*/
   float: right;
+}
+.signIn{
+  font-family: "title", Verdana;
+  margin-top: 1em;
+  justify-content: flex-end;
+  float: right;
+
 }
 
 .bottom_banner{
@@ -575,7 +563,7 @@ div.tab {
 
 /* Style the buttons inside the tab */
 div.tab button {
-    font-family: "title", Verdana, sans-serif;
+    font-family: "title", Verdana;
     font-size: 1.5em;
     display: block;
     background-color: inherit;
@@ -624,9 +612,9 @@ div img {
 @media (min-width: 73.44em) { /*768px, 1175*/
     .home_imgs{
       display: inline-block;
-      width: 50%;
+      width: 100%;
       /*border: red 1px dotted;*/
-      height: auto;
+      height: 20%;
     }
 
     .home_content{
@@ -732,7 +720,7 @@ div.size_option {
 
 /* Style the buttons inside the size option */
 div.size_option button {
-    font-family: "title", Verdana, sans-serif;
+    font-family: "title", Verdana;
     font-size: 1em;
     display: block;
     background-color: inherit;
@@ -766,9 +754,4 @@ div.size_option button.active {
 .cartItem_Border{
   /*border: black 1px solid;
   padding: 1em;*/
-}
-
-.signIn-Button{
-  justify-content: flex-end;
-  border: green 1px solid;
 }
