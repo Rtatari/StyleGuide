@@ -47,8 +47,10 @@ h1.h1_center{
 h2{
   font-family: "section", Verdana;
   font-size: 2em;
-  color: white;
-  padding-left: 4.5em;
+  color: rgb(192,57,43);
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0em;
 }
 
 h2.h2_center{
@@ -57,9 +59,11 @@ h2.h2_center{
 
 h2.cart_title{
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   border-bottom: 2px black solid;
   padding-bottom: 1em;
+  padding-top: 0em;
+
 }
 
 h3{
@@ -69,23 +73,49 @@ h3{
 
 h3.product_title{
   font-family: "section2", Verdana;
-  font-size: 2em;
-  text-align: center;
+  font-size: 1em;
+  text-align: left;
+  color: white;
+}
+
+h3.product_price{
+  font-family: "section2", Verdana;
+  font-size: 1em;
+  text-align: left;
+  color: white;
+}
+h3.item-info{
+  font-family: "section2", Verdana;
+  font-size: 1em;
+  text-align: left;
+  color: white;
 }
 
 h4{
   font-family: "section2", Verdana;
   font-size: 2em;
   text-align: center;
+  color: rgb(44, 62, 80);
 }
-h5{
 
+h5{
+  font-family: "section2", Verdana;
+  font-size: 1.5em;
+  padding-left: 1em;
 }
+
 
 p, a {
   font-family: "body_text", Verdana;
   /*text-align: center;*/
   padding: 0 2em;
+}
+
+p.footer {
+  font-family: "section", Verdana;
+  color: rgb(44, 62, 80);
+  text-align: center;
+  padding-top: 1em;
 }
 
 a{
@@ -103,6 +133,7 @@ a{
 */
 
 /* Styling for the navigation button */
+
 .button{
   display: inline-block;
   padding: 0.5em 0.75em;
@@ -272,8 +303,9 @@ a{
 */
 
 ul, ol{
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "body_text", Verdana;
+  text-align: left;
 }
 
 /* paragraph section */
@@ -328,6 +360,8 @@ ul, ol{
 }
 
 
+
+
 .side-image{
   border: red 1px solid;
   display: inline-block;
@@ -369,7 +403,7 @@ ul, ol{
 
 .container_main{
   /*border: blue 1px solid;*/
-  margin-top: 1em;
+  /*margin-top: 1em;*/
   padding: 2em;
   background-color: #fff;
   overflow: hidden;
@@ -459,10 +493,9 @@ ul, ol{
 .bottom_banner{
   display: flex;
   justify-content: space-around;
-  border: purple 1px solid;
   margin-top: 1em;
   overflow: auto;
-  background-color: #fff;
+  background-color: rgb(230,230,230);
 }
 
 .social_media_icon{
@@ -480,6 +513,9 @@ ul, ol{
   /*display: flex;
   flex-wrap: wrap;*/
 }
+.product_text{
+  align-items: center;
+}
 
 .product_img{
   /*display: flex;*/
@@ -492,16 +528,7 @@ ul, ol{
   /*margin-bottom: 2em;*/
 }
 
-.product_text{
-  /*display: block;*/
-  /*position: relative;*/
-  flex-wrap: wrap;
-  /*border: green 1px solid;*/
-  /*padding: 0;*/
-  background-color: #ccc;
-  margin-top: 0;
-  /*border-radius: 5px;*/
-}
+
 
 .column_1, .column_2{
   display: flex;
@@ -525,9 +552,9 @@ ul, ol{
   display: none;
 }
 
+
 .product_page_body{
   display: block;
-
   /*flex-wrap: wrap;*/
 }
 
@@ -543,6 +570,7 @@ ul, ol{
   /*background-color: #fff;
   flex-grow: 1;*/
   max-width: 50em;
+  margin-right: 0em;
   /*flex-wrap: wrap;*/
 }
 
@@ -691,7 +719,7 @@ div img {
   }
 
   .product_page_info{
-    background-color: #fff;
+    background-color: rgb(230,230,230);
     flex-grow: 1;
     padding-left: 5em;
     /*flex-wrap: wrap;*/
