@@ -124,12 +124,12 @@ img {
 }
 
 .demo {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .active,
 .demo:hover {
-  opacity: 1;
+  opacity: 6;
 }
 
 img.hover-shadow {
