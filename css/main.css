@@ -48,9 +48,10 @@ h2{
   font-family: "section", Verdana;
   font-size: 2em;
   color: rgb(192,57,43);
-  text-align: center;
+  text-align: left;
   padding-top: 1em;
   padding-bottom: 0em;
+
 }
 
 h2.h2_center{
@@ -63,7 +64,19 @@ h2.cart_title{
   border-bottom: 2px black solid;
   padding-bottom: 1em;
   padding-top: 0em;
+  padding-right: 1em;
 
+}
+h2.bullet_forms{
+  text-align: left;
+  font-size: 2em;
+  padding-top: 0em;
+}
+h2.item_paragraph{
+  text-align: right;
+  font-size: 2em;
+  padding-top: 0em;
+  max-width: 12em;
 }
 
 h3{
@@ -84,6 +97,16 @@ h3.product_price{
   text-align: left;
   color: white;
 }
+
+h3.product_page_name{
+  /*display: flex;*/
+  margin-right: 5em;
+  padding-left: 2em;
+}
+h3.product_page_price{
+  /*display: flex;*/
+  margin-right: 5em;
+}
 h3.item-info{
   font-family: "section2", Verdana;
   font-size: 1em;
@@ -101,7 +124,8 @@ h4{
 h5{
   font-family: "section2", Verdana;
   font-size: 1.5em;
-  padding-left: 1em;
+  text-align: left;
+
 }
 
 
@@ -111,11 +135,26 @@ p, a {
   padding: 0 2em;
 }
 
+p.delivery{
+  font-family: "section2", Verdana;
+  font-size: 1.5em;
+  text-align: left;
+  max-width: 20em;
+}
+
 p.footer {
   font-family: "section", Verdana;
   color: rgb(44, 62, 80);
   text-align: center;
   padding-top: 1em;
+}
+
+
+.bullet_forms{
+  font-family: "section", Verdana;
+  color: rgb(44, 62, 80);
+  text-align: left;
+  padding-top: 0em;
 }
 
 a{
@@ -169,22 +208,28 @@ a{
 }
 
 
-.button_remove{
+
+.button_remove:hover, .button_remove:focus, .button_remove:active {
+    /*background-color: rgb(192,57,43);*/
+    background-color: rgb(250,50,50);
+}
+
+.button_add{
   display: inline-block;
   padding: 0.5em 0.75em;
   color: #FFF;
-  font-size: 1.5em;
-  background-color: rgb(44, 62, 80);/*#333;*/
+  font-size: 1.1em;
+  background-color: rgb(44, 62, 80);
   border-radius: 0.20em;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.2s ease-out;
   font-family: "section_special", Verdana;
+  margin-top: 2em;
 }
 
-.button_remove:hover, .button_remove:focus, .button_remove:active {
-    /*background-color: rgb(192,57,43);*/
-    background-color: rgb(250,50,50);
+.button_add:hover, .button:focus, .button:active {
+    background-color: rgb(30,30,66);
 }
 
 
@@ -306,6 +351,7 @@ ul, ol{
   font-size: 1em;
   font-family: "body_text", Verdana;
   text-align: left;
+
 }
 
 /* paragraph section */
@@ -405,8 +451,9 @@ ul, ol{
   /*border: blue 1px solid;*/
   /*margin-top: 1em;*/
   padding: 2em;
-  background-color: #fff;
+  background-color: rgb(230,230,230);
   overflow: hidden;
+
 }
 
 .container_main_home{
@@ -489,8 +536,25 @@ ul, ol{
   float: right;
 
 }
+h3.cart_page_parag{
+  font-family: "title", Verdana;
+  margin-top: 1em;
+  justify-content: flex-end;
+  float: right;
+  color: rgb(44, 62, 80);
+  padding-right: 5em;
+  padding-left: 2em;
+}
+
 
 .bottom_banner{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+  overflow: auto;
+  background-color: rgb(230,230,230);
+}
+.more_on_item{
   display: flex;
   justify-content: space-around;
   margin-top: 1em;
@@ -560,7 +624,12 @@ ul, ol{
 
 
 .product_page_img{
-  max-width: 50em;
+  max-width: 30em;
+  /*justify-content: flex-end;*/
+  /*flex-wrap: wrap;*/
+}
+.cart_page_img{
+  max-width: 30em;
   /*justify-content: flex-end;*/
   /*flex-wrap: wrap;*/
 }
@@ -569,11 +638,21 @@ ul, ol{
   /*border: red 1px dotte d;*/
   /*background-color: #fff;
   flex-grow: 1;*/
-  max-width: 50em;
+  /*max-width: 50em;*/
   margin-right: 0em;
   /*flex-wrap: wrap;*/
+  font-family: "section", Verdana;
+  color: rgb(44, 62, 80);
+  text-align: left;
+  padding-top: 1em;
 }
-
+.cart_page_info {
+  display: flex;
+  margin-right: 5em;
+  font-family: "section", Verdana;
+  padding-top: 1em;
+  color: rgb(44, 62, 80);
+}
 
 .container_body{
   /*border: red 1px solid;*/
@@ -603,6 +682,7 @@ div.tab button {
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
+
 }
 
 
@@ -722,6 +802,7 @@ div img {
     background-color: rgb(230,230,230);
     flex-grow: 1;
     padding-left: 5em;
+
     /*flex-wrap: wrap;*/
   }
 }
@@ -775,11 +856,4 @@ div.size_option button.active {
 .add2Cart_Button{
   justify-content: flex-end;
   /*border: green 1px solid;*/
-}
-
-
-/*CART PAGE*/
-.cartItem_Border{
-  /*border: black 1px solid;
-  padding: 1em;*/
 }

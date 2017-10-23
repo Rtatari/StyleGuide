@@ -9,6 +9,8 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+
 
   </head>
 
@@ -36,15 +38,12 @@
 
   </nav>
 
-      <div class="product_page_body"> <!-- container space-between -->
-        <div class="product_page_img">
-          <img src="img/item-1-Nike.jpg" alt="White running shoes being worn by model"/>
-          <!-- <a href="UltraLight.html"> <p>ULTRA LIGHT</p> </a> -->
-        </div>
+      <div class="product_page_body">
 
         <div class="product_page_info">
+
           <h2> Nike Air Zoom</h2>
-          <p> FREE DELIVERY applies to all orders of CAD 125 or more. Returns are always free. </p>
+          <p class="delivery"> FREE DELIVERY applies to all orders of CAD 125 or more. Returns are always free. </p>
           <h5> Price: $150 </h5>
           <h5> Sizes: </h5>
 
@@ -63,19 +62,78 @@
             <a class="button" href="cart.html">ADD TO CART</a>
           </div>
           <!-- </div> -->
+
+          <div class="row">
+            <div class="column">
+              <img src="img/lightbox-1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/lightbox-2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/lightbox-3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+          </div>
+
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+              <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/nike-air-zoom.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/nike-air-zoom-2.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/nike-air-zoom-3.png" style="width:100%">
+              </div>
+
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+
+              <div class="column">
+                <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="img_fjords_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+            </div>
+          </div>
         </div>
 
-
       </div>
-      <h5> BENEFITS </h5>
+      <!-- background box related to the information on the item. -->
+      <div class="more_on_item">
 
+      <div class="product_page_info">
+      <h2 class="bullet_forms"> BENEFITS </h2>
       <ul>
         <li>Flyknit wraps your foot for total comfort</li>
         <li>Bootie-style construction lets you slip in and out quickly</li>
         <li>Nike Zoom Air cushioning is lightweight and responsive</li>
       </ul>
     </div>
+    <!-- <div class="bullet_forms">
+    <h2 class="bullet_forms"> NIKE AIR ORIGINS </h2>
+    <p> Transcending foot coverage since 1982, this once hoops shoe was named after Air Force One—the aircraft that carries the US President. It was the first basketball shoe to house Nike Air, revolutionising the game for players such as Moses Malone and Charles Barkley while rapidly gaining traction around the world, from the hardwood to the tarmac to the core of hip-hop culture. Today, the Air Force 1 stays true to its roots with soft, springy cushioning and a massive midsole, but the Nike Air technology takes a back seat to the shoe's status as an icon. </p>
+  </div> -->
 
+  </div>
 
     <div class="bottom_banner">
         <!-- <p>BOTTOM BANNER</p> -->
@@ -90,6 +148,7 @@
     </div>
 
 
+    <script src="javascript/lightbox.js"></script>
 
   </body>
 </html>
