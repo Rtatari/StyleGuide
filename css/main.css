@@ -132,6 +132,12 @@ h5{
   margin-right: 1.5em;
 
 }
+h5.confirmation{
+  font-family: "section2", Verdana;
+  font-size: 1.5em;
+  text-align: center;
+  margin-right: 1.5em;
+}
 
 h5.cart-info{
   font-family: "section2", Verdana;
@@ -257,6 +263,7 @@ a{
   transition: background-color 0.2s ease-out;
   font-family: "section_special", Verdana;
   margin-top: 2em;
+  cursor: pointer;
 }
 
 .button_add:hover, .button:focus, .button:active {
@@ -584,6 +591,7 @@ h3.cart_page_parag{
   margin-top: 1em;
   overflow: auto;
   background-color: rgb(230,230,230);
+  
 }
 .more_on_item{
   display: flex;
@@ -751,6 +759,7 @@ div img {
     height: 350px;
     border: green 1px solid;
 }
+
 
 
 @media (min-width: 73.44em) { /*768px, 1175*/
