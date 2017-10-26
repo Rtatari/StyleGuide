@@ -1,10 +1,6 @@
-/*
-  STYLE GUIDE STYLING
-  Default styling for the style guide
-*/
 body {
   /*font-family: sans-serif;*/
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   background-color: rgb(44, 62, 80);
 }
 
@@ -36,7 +32,9 @@ section code {
 h1{
   font-size: 4em;
   font-family: "title", Verdana, sans-serif;
-  color: rgb(44, 62, 80);
+  margin: 0;
+  text-align: center;
+  /*color: rgb(44, 62, 80);*/
   /*text-decoration: underline;*/
 }
 
@@ -182,8 +180,11 @@ p.delivery{
 p.footer {
   font-family: "section", Verdana;
   color: rgb(44, 62, 80);
-  text-align: center;
-  padding-top: 1em;
+  /*text-align: center;*/
+  padding: 0.3em;
+  font-size: 1.4em;
+
+
 }
 
 
@@ -269,6 +270,8 @@ a{
 .button_add:hover, .button:focus, .button:active {
     background-color: rgb(15,15,33);
 }
+
+
 
 
 /*.button-nav {
@@ -434,6 +437,29 @@ ul, ol{
   /*border: 2px grey solid;*/
 }
 
+
+.userBarItem{
+  /*justify-content: flex-end;*/
+  /*flex-grow: 1;*/
+  /*border: green 1px solid;*/
+  font-family: "title", Verdana;
+  /*margin-top: 1em;*/
+  padding: 1em;
+  display: flex;
+  /*border: black 1px solid;*/
+  /*height: 8em;
+  width: 6em;*/
+  float: right;
+  background-color: rgb(54, 72, 90);
+  transition: background-color 0.3s ease-out;
+}
+
+.userBarItem:hover, .userBarItem:active, .userBarItem:focus{
+  background-color: rgb(54, 72, 90);
+}
+
+
+
 .home_img{
   width: 75%;
   padding: 0 3em;
@@ -586,13 +612,24 @@ h3.cart_page_parag{
 
 
 .bottom_banner{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1em;
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  justify-content: center;
+  text-align: center;
+  margin-top: 2em;
   overflow: auto;
   background-color: rgb(230,230,230);
-  
+
 }
+
+.footer_div{
+  /*position: relative;*/
+  flex-grow: 1;
+  width: 100%;
+  /*border: red 1px solid;*/
+}
+
+
 .more_on_item{
   display: flex;
   justify-content: space-around;
@@ -643,11 +680,13 @@ h3.cart_page_parag{
   /*flex-direction: column;*/
   /*flex-wrap: wrap;*/
   /*border: red 1px solid;*/
-  margin-top: 3em;
+  /*margin-top: 3em;*/
 }
 
 .product_display{
   /*border: teal 1px dashed;*/
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .grid_gap{
@@ -763,11 +802,22 @@ div img {
 
 
 @media (min-width: 73.44em) { /*768px, 1175*/
+  body {
+    /*font-family: sans-serif;*/
+    padding: 1rem 2rem;
+  }
+
+
     .home_imgs{
       display: inline-block;
       width: 100%;
       /*border: red 1px dotted;*/
       height: 20%;
+    }
+
+    .h1{
+      margin: 0;
+      text-align: left;
     }
 
     .home_content{
@@ -815,7 +865,14 @@ div img {
 
 @media (min-width: 48em){
   .bottom_banner{
-    justify-content: flex-end;
+    display: flex;
+    /*justify-content: flex-end;*/
+    justify-content: space-around;
+    max-width: 100%;
+  }
+
+  .footer_div{
+    flex-grow: 1;
   }
 
   .social_media_icon{
@@ -907,4 +964,8 @@ div.size_option button.active {
   margin-top: 2em;
   padding-left: 21em;
   /*border: green 1px solid;*/
+}
+
+.slideshow-container{
+  margin-top: 2em;
 }
