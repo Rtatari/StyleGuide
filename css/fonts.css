@@ -7,13 +7,22 @@
 	font-style: normal;
 	src: url('../fonts/TheLightFont.eot');
 	src: url('../fonts/TheLightFont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/TheLightFont.woff2') format('woff2'),
-		 url('../fonts/TheLightFont.woff') format('woff'),
 		 url('../fonts/TheLightFont.ttf') format('truetype');
 }
 
+/*@font-face {
+	font-family: 'title';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/TheLightFont.eot');
+	src: url('../fonts/TheLightFont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/TheLightFont.woff2') format('woff2'),
+		 url('../fonts/TheLightFont.woff') format('woff'),
+		 url('../fonts/TheLightFont.ttf') format('truetype');
+}*/
+
 /*Smaller Section Titles*/
-@font-face {
+/*@font-face {
 	font-family: 'section';
 	font-weight: normal;
 	font-style: normal;
@@ -22,9 +31,18 @@
 		 url('../fonts/big_noodle_titling.woff2') format('woff2'),
 		 url('../fonts/big_noodle_titling.woff') format('woff'),
 		 url('../fonts/big_noodle_titling.ttf') format('truetype');
-}
+}*/
 
 @font-face {
+	font-family: 'section';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/big_noodle_titling.eot');
+	src: url('../fonts/big_noodle_titling.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/big_noodle_titling.ttf') format('truetype');
+}
+
+/*@font-face {
 	font-family: 'section2';
 	font-weight: normal;
 	font-style: normal;
@@ -33,13 +51,22 @@
 		 url('../fonts/big_noodle_titling_oblique.woff2') format('woff2'),
 		 url('../fonts/big_noodle_titling_oblique.woff') format('woff'),
 		 url('../fonts/big_noodle_titling_oblique.ttf') format('truetype');
+}*/
+
+@font-face {
+	font-family: 'section2';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/big_noodle_titling_oblique.eot');
+	src: url('../fonts/big_noodle_titling_oblique.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/big_noodle_titling_oblique.ttf') format('truetype');
 }
 
 
 
 
 /*Special Section titles */
-@font-face {
+/*@font-face {
 	font-family: 'section_special';
 	font-weight: normal;
 	font-style: normal;
@@ -48,10 +75,19 @@
 		 url('../fonts/Americanatest.woff2') format('woff2'),
 		 url('../fonts/Americanatest.woff') format('woff'),
 		 url('../fonts/Americanatest.ttf') format('truetype');
+}*/
+
+@font-face {
+	font-family: 'section_special';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Americanatest.eot');
+	src: url('../fonts/Americanatest.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Americanatest.ttf') format('truetype');
 }
 
 /*Paragraph and body text*/
-@font-face {
+/*@font-face {
 	font-family: 'body_text';
 	font-weight: normal;
 	font-style: normal;
@@ -60,9 +96,18 @@
 		 url('../fonts/CaviarDreams_Bold.woff2') format('woff2'),
 		 url('../fonts/CaviarDreams_Bold.woff') format('woff'),
 		 url('../fonts/CaviarDreams_Bold.ttf') format('truetype');
-}
+}*/
 
 @font-face {
+	font-family: 'body_text';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/CaviarDreams_Bold.eot');
+	src: url('../fonts/CaviarDreams_Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/CaviarDreams_Bold.ttf') format('truetype');
+}
+
+/*@font-face {
 	font-family: 'body_text_link';
 	font-weight: normal;
 	font-style: normal;
@@ -70,5 +115,14 @@
 	src: url('../fonts/CaviarDreams_BoldItalic.eot?#iefix') format('embedded-opentype'),
 		 url('../fonts/CaviarDreams_BoldItalic.woff2') format('woff2'),
 		 url('../fonts/CaviarDreams_BoldItalic.woff') format('woff'),
+		 url('../fonts/CaviarDreams_BoldItalic.ttf') format('truetype');
+}*/
+
+@font-face {
+	font-family: 'body_text_link';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/CaviarDreams_BoldItalic.eot');
+	src: url('../fonts/CaviarDreams_BoldItalic.eot?#iefix') format('embedded-opentype'),
 		 url('../fonts/CaviarDreams_BoldItalic.ttf') format('truetype');
 }
