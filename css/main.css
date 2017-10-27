@@ -123,6 +123,13 @@ h4{
   color: rgb(44, 62, 80);
 }
 
+h4.price{
+  font-family: "section2", Verdana;
+  font-size: 3.4em;
+  text-align: left;
+  color: rgb(44, 62, 80);
+}
+
 h5{
   font-family: "section2", Verdana;
   font-size: 1.5em;
@@ -225,6 +232,23 @@ a{
 }
 
 .button:hover, .button:focus, .button:active {
+    background-color: rgb(125,35,20);
+}
+
+.button_cartADD{
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  font-size: 1.8em;
+  background-color: rgb(192,57,43);/*#333;*/
+  border-radius: 0.20em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.2s ease-out;
+  font-family: "section_special", Verdana;
+}
+
+.button_cartADD:hover, .button_cartADD:focus, .button_cartADD:active {
     background-color: rgb(125,35,20);
 }
 
@@ -743,6 +767,7 @@ h3.cart_page_parag{
   color: rgb(44, 62, 80);
   text-align: left;
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .cart_page_info {
@@ -750,6 +775,7 @@ h3.cart_page_parag{
   font-family: "section", Verdana;
   padding-top: 1em;
   color: rgb(44, 62, 80);
+  /*border: red 1px solid;*/
 
 }
 
@@ -916,6 +942,13 @@ div img {
     /*padding-left: 10em;*/
   }
 
+  .product_page_body_select{
+    /*display: flex;*/
+    /*width: 90%;*/
+    padding-bottom: 3em;
+    /*padding-left: 10em;*/
+  }
+
   .product_page_img{
     max-width: 50em;
     /*flex-wrap: wrap;*/
@@ -977,10 +1010,16 @@ div.size_option button.active {
 }
 
 .add2Cart_Button{
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 2em;
-  padding-left: 21em;
+  /*padding-left: 21em;*/
   /*border: green 1px solid;*/
+}
+
+.add2Cart_Button2{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .slideshow-container{
@@ -1018,4 +1057,37 @@ div.size_option button.active {
   margin-right: 3em;
   /*justify-content: flex-end;*/
   /*flex-wrap: wrap;*/
+}
+
+.column{
+  /*border: 1px green solid;*/
+}
+
+.product_img_slideshow{
+  padding-top: 3em;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*justify-content: space-around;*/
+  /*border: 1px red dashed;*/
+  /*overflow: hidden;*/
+  /*flex-direction: column;*/
+}
+
+.product_details{
+  /*padding-left: 5em;*/
+  /*border: red 1px solid;*/
+}
+
+.product_details_row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product_details_text{
+  padding-left: 3em;
+  /*border: blue 1px solid;*/
+}
+
+.product_photo{
 }
