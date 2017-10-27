@@ -10,33 +10,48 @@
     <link href="css/flexbox.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/FAQ.css" rel="stylesheet">
+    <link href="css/slideShow.css" rel="stylesheet">
 
 
   </head>
 
   <body>
+          <!-- <p>LOGO IMG</p> -->
 
-    <div class="shopping_cart">
-      <a href="cart.html">SHOPPING CART</a>
-    </div>
+        <div class="logo_text">
+          <a href="index.html"><h1>Dash Inc.</h1></a>
+        </div>
 
-    <!-- <div class="log_in">
-      <p>SIGN IN</p>
-    </div> -->
-    <div class="signIn">
-      <a href="signIn.html">SIGN IN</a>
-    </div>
+        <!-- <div class="shopping_cart">
+          <a href="cart.html">SHOPPING CART</a>
+        </div> -->
 
-<div class="container_body">
+        <!-- <div class="log_in">
+          <p>SIGN IN</p>
+        </div> -->
+        <!-- <div class="signIn">
+          <a href="signIn.html">SIGN IN</a>
+        </div> -->
 
-  <nav class="navBar box">
+    <div class="container_body">
 
-    <a href="newArrivals.html" class="navBarItem">New Arrivals</a>
-    <a href="men.html" class="navBarItem">Men</a>
-    <a href="womens.html" class="navBarItem">Women</a>
-    <a href="FAQ.html" class="navBarItem">FAQ</a>
+      <div>
+        <nav class="navBar box">
+          <!-- <a href="Contact.html" class="navBarItem">New Arrivals</a> -->
+          <a href="index.html" class="navBarItem">New Arrivals</a>
+          <a href="men.html" class="navBarItem">Men</a>
+          <a href="womens.html" class="navBarItem">Women</a>
+          <a href="FAQ.html" class="navBarItem">FAQ</a>
 
-  </nav>
+
+          <nav class="navBar_user">
+            <a href="cart.html" class="userBarItem">SHOPPING CART</a>
+            <a href="signIn.html" class="userBarItem">SIGN IN</a>
+          </nav>
+
+        </nav>
+
+      </div>
 
       <div class="product_page_body">
 
@@ -47,26 +62,21 @@
           <div class="btn-group">
             <button onclick="myFunction()" class="dropbtn">Frequently Asked Questions</button>
               <div id="myDropdown" class="dropdown-content">
-                <a href="#home">HOW LONG WILL THE SHIPPING TAKE FOR EACH ITEM?</a>
-            <p>Items will be expected to be at you house door from 7-10 days aafter purchase.</p>
-              <div id="myDropdown-2" class="dropdown-content-2">
-                <a href="#home">WHAT IS THE RETURN POLICY?</a>
-            <p> Items can be returned within 30 days after purchase </p>
-              <div id="myDropdown-3" class="dropdown-content">
-                <a href="#home">IS THERE TRADE IN POLICY FOR ON THE ITEMS?</a>
-                <p> As of November 2017, there are still no trade in policies. </p>
-
-          </div>
-
-
-
-
-                <!-- </div> -->
+                  <a href="#home">HOW LONG WILL THE SHIPPING TAKE FOR EACH ITEM?</a>
+                  <p>Items will be expected to be at you house door from 7-10 days aafter purchase.</p>
+                <div id="myDropdown-2" class="dropdown-content-2">
+                      <a href="#home">WHAT IS THE RETURN POLICY?</a>
+                      <p> Items can be returned within 30 days after purchase </p>
+                  <div id="myDropdown-3" class="dropdown-content">
+                    <a href="#home">IS THERE TRADE IN POLICY FOR ON THE ITEMS?</a>
+                    <p> As of November 2017, there are still no trade in policies. </p>
+                  </div>
+                </div>
               </div>
 
 
 
-                    <!-- </div> -->
+          </div>
 
         </div>
 
@@ -74,17 +84,35 @@
       <!-- background box related to the information on the item. -->
 
 
-    <div class="bottom_banner">
-        <!-- <p>BOTTOM BANNER</p> -->
-        <p class="footer"> TELEPHONE: 778-000-0000 </p>
-        <p class="footer"> Monday to Friday from 8:30am to 4:00pm </p>
-        <p class="footer"> Address: (PST):111 Main Street, Vancouver, B.C.</p>
-        <p class="footer">Opens Monday to Saturday 9:00am to 9:00 pm (PST) </p>
-        <p class="footer">Facebook </p>
-        <p class="footer">Instagram </p>
-        <p class="footer">Twitter </p>
+      <div class="bottom_banner">
+          <!-- <p>BOTTOM BANNER</p> -->
+          <div class="footer_div">
+            <p class="button"><a href="styleGuide.html">STYLE GUIDE</a></p>
+          </div>
 
-    </div>
+          <div class="footer_div">
+            <!-- <p class="footer"> Monday to Friday from 8:30am to 4:00pm </p> -->
+            <p class="button"><a href="citations.html">CITATIONS</a></p>
+          </div>
+
+          <div class="footer_div">
+          <p class="button"><a href="https://github.com/Rtatari/StyleGuide">GIT REPO</a></p>
+            <!-- <p class="footer"> Address: (PST):111 Main Street, Vancouver, B.C.</p> -->
+          </div>
+
+          <div class="footer_div">
+            <p class="footer">Facebook</p>
+          </div>
+
+          <div class="footer_div">
+            <p class="footer">Instagram</p>
+          </div>
+
+          <div class="footer_div">
+            <p class="footer">Twitter</p>
+          </div>
+
+      </div>
 
 
     <script src="javascript/FAQ.js"></script>

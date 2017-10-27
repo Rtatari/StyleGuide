@@ -10,33 +10,48 @@
     <link href="css/flexbox.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/signIn.css" rel="stylesheet">
+    <link href="css/slideShow.css" rel="stylesheet">
 
 
   </head>
 
   <body>
+          <!-- <p>LOGO IMG</p> -->
 
-    <div class="shopping_cart">
-      <a href="cart.html">SHOPPING CART</a>
-    </div>
+        <div class="logo_text">
+          <a href="index.html"><h1>Dash Inc.</h1></a>
+        </div>
 
-    <!-- <div class="log_in">
-      <p>SIGN IN</p>
-    </div> -->
-    <div class="signIn">
-      <a href="signIn.html">SIGN IN</a>
-    </div>
+        <!-- <div class="shopping_cart">
+          <a href="cart.html">SHOPPING CART</a>
+        </div> -->
 
-<div class="container_body">
+        <!-- <div class="log_in">
+          <p>SIGN IN</p>
+        </div> -->
+        <!-- <div class="signIn">
+          <a href="signIn.html">SIGN IN</a>
+        </div> -->
 
-  <nav class="navBar box">
+    <div class="container_body">
 
-    <a href="newArrivals.html" class="navBarItem">New Arrivals</a>
-    <a href="men.html" class="navBarItem">Men</a>
-    <a href="womens.html" class="navBarItem">Women</a>
-    <a href="FAQ.html" class="navBarItem">FAQ</a>
+      <div>
+        <nav class="navBar box">
+          <!-- <a href="Contact.html" class="navBarItem">New Arrivals</a> -->
+          <a href="index.html" class="navBarItem">New Arrivals</a>
+          <a href="men.html" class="navBarItem">Men</a>
+          <a href="womens.html" class="navBarItem">Women</a>
+          <a href="FAQ.html" class="navBarItem">FAQ</a>
 
-  </nav>
+
+          <nav class="navBar_user">
+            <a href="cart.html" class="userBarItem">SHOPPING CART</a>
+            <a href="signIn.html" class="userBarItem">SIGN IN</a>
+          </nav>
+
+        </nav>
+
+      </div>
 
       <div class="product_page_body">
 
@@ -45,30 +60,35 @@
           <h2 class="cart_title">Sign In</h2>
 
 
+            <div class="signIn_form">
+              <form action="">
+                <div class="imgcontainer">
+                  <img src="img/profile.png" alt="Avatar" class="avatar">
+                </div>
 
-<!-- <form action="/action_page.php"> -->
-  <div class="imgcontainer">
-    <img src="img/profile.png" alt="Avatar" class="avatar">
-  </div>
+                <div class="container_signIn">
+                  <label><b>Email</b></label>
+                  <input class="input_field" type="text" placeholder="Enter Email" name="uname" required>
 
-  <div class="container_signIn">
-    <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="uname" required>
+                  <label><b>Username</b></label>
+                  <input class="input_field" type="text" placeholder="Enter Username" name="uname" required>
 
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+                  <label><b>Password</b></label>
+                  <input class="input_field" type="password" placeholder="Enter Password" name="psw" required>
 
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+                  <!-- <button  class="button-signIn"type="submit">Login</button> -->
+                  <a href="index.html" class="button_add"> LOGIN </a>
+                  <a href="" class="button"> CANCEL </a>
+                  <input type="checkbox" checked="checked"> Remember me
 
-    <button  class="button-signIn"type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
-  </div>
+                </div>
 
-    <button type="button-signIn" class="cancelbtn">Cancel</button>
-</form>
+                  <!-- <button type="button-signIn" class="cancelbtn">Cancel</button> -->
+                  <!-- <p class="button"><a href="index.html">CANCEL<a/></button> -->
+              </form>
+            </div>
 
-          <!-- <div class="product_page_body"> -->
+                      <!-- <div class="product_page_body"> -->
 
 
         </div>
@@ -77,17 +97,35 @@
       <!-- background box related to the information on the item. -->
 
 
-    <div class="bottom_banner">
-        <!-- <p>BOTTOM BANNER</p> -->
-        <p class="footer"> TELEPHONE: 778-000-0000 </p>
-        <p class="footer"> Monday to Friday from 8:30am to 4:00pm </p>
-        <p class="footer"> Address: (PST):111 Main Street, Vancouver, B.C.</p>
-        <p class="footer">Opens Monday to Saturday 9:00am to 9:00 pm (PST) </p>
-        <p class="footer">Facebook </p>
-        <p class="footer">Instagram </p>
-        <p class="footer">Twitter </p>
+      <div class="bottom_banner">
+          <!-- <p>BOTTOM BANNER</p> -->
+          <div class="footer_div">
+            <p class="button"><a href="styleGuide.html">STYLE GUIDE</a></p>
+          </div>
 
-    </div>
+          <div class="footer_div">
+            <!-- <p class="footer"> Monday to Friday from 8:30am to 4:00pm </p> -->
+            <p class="button"><a href="citations.html">CITATIONS</a></p>
+          </div>
+
+          <div class="footer_div">
+          <p class="button"><a href="https://github.com/Rtatari/StyleGuide">GIT REPO</a></p>
+            <!-- <p class="footer"> Address: (PST):111 Main Street, Vancouver, B.C.</p> -->
+          </div>
+
+          <div class="footer_div">
+            <p class="footer">Facebook</p>
+          </div>
+
+          <div class="footer_div">
+            <p class="footer">Instagram</p>
+          </div>
+
+          <div class="footer_div">
+            <p class="footer">Twitter</p>
+          </div>
+
+      </div>
 
 
     <!-- <script src="javascript/signIn.js"></script> -->
