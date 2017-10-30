@@ -4,10 +4,14 @@
 
 .navBar{
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .navBar_user{
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 
@@ -25,23 +29,24 @@
   flex-grow: 1;
   padding: 0.5em 0;
   margin-left: 0;
-  font-size: 1.4em;
+  font-size: 1.4em; /*1.4*/
   text-align: center;
 }
 
 
 
-.userBarItem{
-  justify-content: space-between;
-  -ms-flex-grow: 1;
+a.userBarItem{
+  /*justify-content: space-between;*/
+  -ms-flex-grow: 0;
   flex-grow: 1;
-  /*border: green 1px solid;*/
+  border: black 1px solid;
   font-family: "title", Verdana;
   padding: 1em;
   display: flex;
   float: right;
   background-color: rgb(64, 82, 100);
   transition: background-color 0.3s ease-out;
+  text-align: center;
 }
 
 .userBarItem:hover, .userBarItem:active, .userBarItem:focus{
@@ -76,10 +81,31 @@
   margin: 1em 0;
 }
 
+
+@media (min-width: 41.63em){
+  .navBar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .navBar_user{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .navBarItem{
+    font-size: 1.7em; /*1.4*/
+
+  }
+}
+
+
 @media (min-width: 48em){
   .userBarItem{
     /*display: flex;*/
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
   }
 
   /*.navBar_user{

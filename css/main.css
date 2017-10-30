@@ -42,6 +42,10 @@ h1.h1_center{
   text-align: center;
 }
 
+h1.title_logo{
+  margin-bottom: 0.6em;
+}
+
 h2{
   font-family: "section", Verdana;
   font-size: 2em;
@@ -173,7 +177,7 @@ h6.price_number{
 p, a {
   font-family: "body_text", Verdana;
   /*text-align: center;*/
-  padding: 0 2em;
+  /*padding: 0 2em;*/
 }
 
 p.delivery{
@@ -205,6 +209,47 @@ p.footer {
 a{
   text-decoration: none;
   color: white;
+}
+
+.product_text{
+  /*align-items: center;*/
+  padding-top: 1.4em;
+  padding-bottom: 1.4em;
+  display: flex;
+  justify-content: space-around;
+  background-color: #778;
+  border-radius: 0 0 8px 8px;
+}
+
+p.product_title{
+  color: white;
+  padding-top: 0.4em;
+  padding-left: 0;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+p.product_price{
+  color: white;
+  margin-top: 0.6em;
+  margin-right: 0.5em;
+  margin-left: 0.2em;
+  padding: 0.2em 0.4em;
+  font-size: 1.7em;
+  background-color: rgb(24,82,110);
+  border-radius: 5px;
+}
+
+a.button{
+  display: block;
+  font-size: 1.4em;
+  /*padding-top: 0.1em;*/
+  margin-bottom: 0.8em;
+  margin-top: 0.8em;
+  margin-right: 0.2em;
+  text-align: center;
+
+
 }
 
 /*p.rendered{
@@ -359,10 +404,10 @@ a{
   border: none;
 }
 
-.in-text{
+a.in-text{
   text-decoration: none;
   font-family: "body_text_link", Verdana;
-  color: #999;
+  color: white;
 }
 
 .button_submit{
@@ -481,25 +526,23 @@ ul, ol{
 }
 
 
-.userBarItem{
+/*.userBarItem{*/
+  /*text-align: center;*/
   /*justify-content: flex-end;*/
   /*flex-grow: 1;*/
   /*border: green 1px solid;*/
-  font-family: "title", Verdana;
+  /*font-family: "title", Verdana;*/
   /*margin-top: 1em;*/
-  padding: 1em;
-  display: flex;
+  /*padding: 1em;
+  display: flex;*/
   /*border: black 1px solid;*/
   /*height: 8em;
   width: 6em;*/
-  float: right;
+  /*float: right;
   background-color: rgb(54, 72, 90);
   transition: background-color 0.3s ease-out;
-}
+}*/
 
-.userBarItem:hover, .userBarItem:active, .userBarItem:focus{
-  background-color: rgb(54, 72, 90);
-}
 
 
 
@@ -697,9 +740,7 @@ h3.cart_page_parag{
   /*display: flex;
   flex-wrap: wrap;*/
 }
-.product_text{
-  align-items: center;
-}
+
 
 .product_img{
   /*display: flex;*/
@@ -841,19 +882,29 @@ div img {
     border: green 1px solid;
 }
 
+@media (min-width: 55.69em){ /*891 / 16 = */
+  .bottom_banner{
+    display: flex;
+    /*justify-content: flex-end;*/
+    justify-content: space-around;
+    max-width: 100%;
+  }
 
+  .footer_div{
+    flex-grow: 1;
+  }
+}
 
-@media (min-width: 73.44em) { /*768px, 1175*/
+@media (min-width: 48em) { /*768px, 1175, half way window*/
   body {
     /*font-family: sans-serif;*/
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 
 
     .home_imgs{
       display: inline-block;
       width: 100%;
-      /*border: red 1px dotted;*/
       height: 20%;
     }
 
@@ -877,6 +928,41 @@ div img {
       padding-left: 10em;
       flex-wrap: wrap;
     }
+
+    h2.index_aboutus_header{
+      padding
+      text-align: left;
+      /*border: red 1px solid;*/
+    }
+
+    .index_aboutus_subheader{
+      text-align: left;
+    }
+
+    /*.bottom_banner{
+      display: flex;
+      justify-content: space-around;
+      max-width: 100%;
+    }
+
+    .footer_div{
+      flex-grow: 1;
+    }*/
+
+    .social_media_icon{
+      margin-left: 3em;
+    }
+
+    .column_1, .column_2{
+      flex-wrap: nowrap;
+    }
+
+    .grid_gap{
+      display: block;
+      width: 10em; /*5em original*/
+
+    }
+
 }
 
 @media (min-width: 71.75em) {
@@ -905,33 +991,8 @@ div img {
 
 }
 
-@media (min-width: 48em){
-  .bottom_banner{
-    display: flex;
-    /*justify-content: flex-end;*/
-    justify-content: space-around;
-    max-width: 100%;
-  }
 
-  .footer_div{
-    flex-grow: 1;
-  }
 
-  .social_media_icon{
-    margin-left: 3em;
-  }
-
-  .column_1, .column_2{
-    flex-wrap: nowrap;
-  }
-
-  .grid_gap{
-    display: block;
-    width: 5em;
-
-  }
-
-}
 
 
 @media (min-width: 85.81em){
@@ -1090,4 +1151,24 @@ div.size_option button.active {
 }
 
 .product_photo{
+}
+
+.index_aboutus{
+  background: #ccc;
+  padding: 1em 2em;
+  margin-top: 1.5em;
+}
+
+h2.index_aboutus_header{
+  text-align: center;
+  padding: 0;
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+h3.index_aboutus_subheader{
+  text-align: center;
+  padding: 0;
+  margin-top: 2em;
+  text-decoration: underline;
 }
