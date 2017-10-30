@@ -33,34 +33,55 @@ input[type=text], input[type=password] {
     color: white;
 }
 
-.imgcontainer {
-  padding-left:40%;
+.signIn_form{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  /*border: 1px red solid;*/
+}
+
+/*.imgcontainer {*/
+
+  /*border: green 1px solid;*/
+  /*width: 10%;
+  height: 10%;*/
+  /*padding-left:40%;*/
   /*display: flex;*/
     /*text-align: center;
     margin: 24px 0 12px 0;*/
+    /*justify-content: space-around;*/
+    /*-ms-flex-grow: 1;*/
+    /*flex-grow: 1;*/
+    /*padding: 0.5em 0;*/
+/*}*/
+
+.container_signIn {
+  /*border: blue 1px solid;*/
+  justify-content: center;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  /*padding: 0.5em 3em;*/
+  /*margin-left: 0;*/
+  font-size: 1.4em; /*1.4*/
+  text-align: center;
 }
 
-img.avatar {
+
+
+/*img.avatar {
 
     width: 40%;
     border-radius: 50%;
-}
+}*/
 
-.container_signIn {
-    padding: 5%;
-    padding-right: 10%;
-}
+
 
 span.psw {
     float: right;
     padding-top: 16px;
 }
 
-.signIn_form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 
 
 @media screen and (max-width: 300px) {
@@ -71,4 +92,19 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+}
+
+
+@media (min-width: 41.63em){
+  .signIn_form{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0 1em;
+  }
+
+  .container_signIn {
+    justify-content: center;
+  }
+
 }

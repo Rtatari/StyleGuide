@@ -466,7 +466,7 @@ a.in-text{
 .input_field:hover, .input_field:focus, .input_field:active{
   background-color: rgb(200,200,200);
   color: #000;
-  border: black 2px solid;
+  /*border: black 2px solid;*/
 }
 
 
